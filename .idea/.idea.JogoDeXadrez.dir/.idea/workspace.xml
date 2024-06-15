@@ -8,11 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d37528-bf4a-443f-a4a9-2ad7bef2cf17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Posicao.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Cor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Peca.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Tabuleiro.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JogoDeXadrez.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JogoDeXadrez.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JogoDeXadrez-Console/JogoDeXadrez-Console.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/JogoDeXadrez-Console.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JogoDeXadrez-Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718485648959</updated>
-      <workItem from="1718485650493" duration="1542000" />
+      <workItem from="1718485650493" duration="2063000" />
     </task>
     <servers />
   </component>
