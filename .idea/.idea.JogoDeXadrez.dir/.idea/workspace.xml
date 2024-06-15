@@ -8,10 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d37528-bf4a-443f-a4a9-2ad7bef2cf17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Cor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Peca.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Tabuleiro.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/Tela.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JogoDeXadrez.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JogoDeXadrez.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Tabuleiro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JogoDeXadrez-Console/tabuleiro/Tabuleiro.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718485648959</updated>
-      <workItem from="1718485650493" duration="2063000" />
+      <workItem from="1718485650493" duration="2711000" />
     </task>
     <servers />
   </component>

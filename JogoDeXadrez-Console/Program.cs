@@ -1,3 +1,7 @@
-﻿using JogoDeXadrez_Console.tabuleiro;
+﻿using JogoDeXadrez_Console;
+using JogoDeXadrez_Console.tabuleiro;
 
-Tabuleiro tab = new Tabuleiro(8,9);
+Tabuleiro tab = new Tabuleiro(8,8);
+
+
+Tela.imprimirTabuleiro(tab);
