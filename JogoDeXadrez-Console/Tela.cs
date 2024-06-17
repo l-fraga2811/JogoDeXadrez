@@ -12,11 +12,14 @@ public class Tela
             {
                 if (tab.peca(i, j) == null)
                 {
-                    Console.Write("-");
+                    Console.Write("- ");
                 }
-                Console.Write( tab.peca(i,j) + " ");
+                else
+                {
+                    Console.Write( tab.peca(i,j) + " ");
+                }
             }
-            Console.WriteLine();
+            Console.WriteLine($" {i+1}");
         }
     }
 }
