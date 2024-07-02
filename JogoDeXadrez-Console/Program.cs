@@ -1,11 +1,14 @@
 ﻿using JogoDeXadrez_Console;
 using JogoDeXadrez_Console.PecasDeXadrez;
 using JogoDeXadrez_Console.tabuleiro;
+try
+{
+    PartidaDeXadrez partida = new();
 
-Tabuleiro tab = new Tabuleiro(8,8);
+    Tela.imprimirTabuleiro(partida.tab);
+}
+catch (Exception e)
+{
+    System.Console.WriteLine(e.Message);
+}
 
-tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0,0));
-tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1,3));
-tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(2,4));
-
-Tela.imprimirTabuleiro(tab);

@@ -14,4 +14,8 @@ public class Peca
         this.cor = cor;
         this.qntDeMovimentos = 0;
     }
+    public void incrementarQuantidadeDeMovs()
+    {
+        qntDeMovimentos++;
+    }
 }
