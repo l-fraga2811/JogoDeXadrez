@@ -40,5 +40,12 @@ public class Tela
             Console.Write(peca);
             Console.ForegroundColor = aux;
         }
+       
+    } 
+    public static PosicoesXadrez lerPosicaoXadrez() {
+        string s = Console.ReadLine();
+        char coluna = s[0];
+        int linha = int.Parse(s[1] + "");
+        return new PosicoesXadrez(coluna, linha);
     }
 }
