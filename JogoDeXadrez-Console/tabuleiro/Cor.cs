@@ -1,7 +1,12 @@
 ﻿namespace JogoDeXadrez_Console.tabuleiro;
 
-public enum Cor
-{
+public enum Cor {
+
     Branca,
-    Preta
+    Preta,
+    Amarela,
+    Azul,
+    Vermelha,
+    Verde,
+    Laranja
 }

@@ -1,28 +1,42 @@
 ﻿using JogoDeXadrez_Console;
 using JogoDeXadrez_Console.PecasDeXadrez;
 using JogoDeXadrez_Console.tabuleiro;
-try
-{
-    PartidaDeXadrez partida = new();
+try {
+    PartidaDeXadrez partida = new PartidaDeXadrez();
 
-    while (!partida.terminada)
-    {
-        Console.Clear();
-        Tela.imprimirTabuleiro(partida.tab);
+    while (!partida.terminada) {
 
-        System.Console.Write("Origem: ");
-        Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+        try {
+            Console.Clear();
+            Tela.imprimirPartida(partida);
 
-        System.Console.Write("Destino: ");
-        Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
+            Console.WriteLine();
+            Console.Write("Origem: ");
+            Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+            partida.validarPosicaoDeOrigem(origem);
 
-        partida.executaMov(origem,destino);
+            bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis();
+
+            Console.Clear();
+            Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
+            Console.WriteLine();
+            Console.Write("Destino: ");
+            Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
+            partida.validarPosicaoDeDestino(origem, destino);
+
+            partida.realizaJogada(origem, destino);
+        }
+        catch (TabuleiroException e) {
+            Console.WriteLine(e.Message);
+            Console.ReadLine();
+        }
     }
-
-    Tela.imprimirTabuleiro(partida.tab);
+    Console.Clear();
+    Tela.imprimirPartida(partida);
 }
-catch (Exception e)
-{
-    System.Console.WriteLine(e.Message);
+catch (TabuleiroException e) {
+    Console.WriteLine(e.Message);
 }
 
+Console.ReadLine();
